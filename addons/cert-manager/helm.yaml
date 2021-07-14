@@ -19,7 +19,7 @@ spec:
       chart: cert-manager
       sourceRef:
         kind: HelmRepository
-        name: jetsack
+        name: jetstack
         namespace: cert-manager
   interval: 1m0s
   releaseName: cert-manager

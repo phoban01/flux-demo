@@ -14,4 +14,4 @@ fi
 flux bootstrap github \
     --owner $(gh repo view --json 'owner' --jq '.owner.login') \
     --repository $(gh repo view --json 'name' --jq '.name') \
-    --path ./cluster/flux-demo
+    --path ./cluster/$1

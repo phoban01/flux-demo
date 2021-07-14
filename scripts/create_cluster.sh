@@ -9,7 +9,7 @@ set -o errexit
 cat <<EOF | kind create cluster --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
-name: flux-demo
+name: $1
 nodes:
 - role: control-plane
 - role: worker
